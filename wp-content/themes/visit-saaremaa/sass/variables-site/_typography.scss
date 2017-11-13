@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Aino";
+  src: url("././fonts/Aino_Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aino";
+  src: url("././fonts/Aino_Bold.woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+$font__main: "Aino", sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;

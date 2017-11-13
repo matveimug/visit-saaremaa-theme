@@ -1,0 +1,18 @@
+/*
+Theme Name: Visit Saaremaa
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+
+/*
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+*/
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJ0bC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7OztFQVNFOztBQUVGOzs7OztFQUtFIiwiZmlsZSI6InJ0bC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxyXG5UaGVtZSBOYW1lOiBWaXNpdCBTYWFyZW1hYVxyXG5cclxuQWRkaW5nIHN1cHBvcnQgZm9yIGxhbmd1YWdlcyB3cml0dGVuIGluIGEgUmlnaHQgVG8gTGVmdCAoUlRMKSBkaXJlY3Rpb24gaXMgZWFzeSAtXHJcbml0J3MganVzdCBhIG1hdHRlciBvZiBvdmVyd3JpdGluZyBhbGwgdGhlIGhvcml6b250YWwgcG9zaXRpb25pbmcgYXR0cmlidXRlc1xyXG5vZiB5b3VyIENTUyBzdHlsZXNoZWV0IGluIGEgc2VwYXJhdGUgc3R5bGVzaGVldCBmaWxlIG5hbWVkIHJ0bC5jc3MuXHJcblxyXG5odHRwczovL2NvZGV4LndvcmRwcmVzcy5vcmcvUmlnaHQtdG8tTGVmdF9MYW5ndWFnZV9TdXBwb3J0XHJcblxyXG4qL1xyXG5cclxuLypcclxuYm9keSB7XHJcblx0ZGlyZWN0aW9uOiBydGw7XHJcblx0dW5pY29kZS1iaWRpOiBlbWJlZDtcclxufVxyXG4qL1xyXG4iXX0= */
