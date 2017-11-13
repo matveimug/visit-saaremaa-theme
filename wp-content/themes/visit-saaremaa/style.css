@@ -95,7 +95,8 @@ template {
   display: none; }
 
 a {
-  background-color: transparent; }
+  background-color: transparent;
+  text-decoration: none; }
 
 a:active,
 a:hover {
@@ -229,6 +230,10 @@ td,
 th {
   padding: 0; }
 
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -246,9 +251,6 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
-
-p {
-  margin-bottom: 1.5em; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -721,9 +723,40 @@ object {
 .main-navigation {
   position: fixed; }
 
+.corner, .explore-item, .explore-item-1, .explore-item-3, .explore-item-2, .explore-item-4, .explore-item a, .explore-item-1 a, .explore-item-3 a, .explore-item-2 a, .explore-item-4 a, .explore-item a:active, .explore-item-1 a:active, .explore-item-3 a:active, .explore-item-2 a:active, .explore-item-4 a:active, .explore-item a:visited, .explore-item-1 a:visited, .explore-item-3 a:visited, .explore-item-2 a:visited, .explore-item-4 a:visited, .explore-item a:focus, .explore-item-1 a:focus, .explore-item-3 a:focus, .explore-item-2 a:focus, .explore-item-4 a:focus, .news-item, .social-item, .social-item-1, .social-item-2, .social-item-3 {
+  border-radius: 3px; }
+
+.flex, .explore-item a, .explore-item-1 a, .explore-item-3 a, .explore-item-2 a, .explore-item-4 a, .explore-item a:active, .explore-item-1 a:active, .explore-item-3 a:active, .explore-item-2 a:active, .explore-item-4 a:active, .explore-item a:visited, .explore-item-1 a:visited, .explore-item-3 a:visited, .explore-item-2 a:visited, .explore-item-4 a:visited, .explore-item a:focus, .explore-item-1 a:focus, .explore-item-3 a:focus, .explore-item-2 a:focus, .explore-item-4 a:focus, .news-content-wrapper, .news-form {
+  display: flex; }
+
+.box, .explore-item a, .explore-item-1 a, .explore-item-3 a, .explore-item-2 a, .explore-item-4 a, .explore-item a:active, .explore-item-1 a:active, .explore-item-3 a:active, .explore-item-2 a:active, .explore-item-4 a:active, .explore-item a:visited, .explore-item-1 a:visited, .explore-item-3 a:visited, .explore-item-2 a:visited, .explore-item-4 a:visited, .explore-item a:focus, .explore-item-1 a:focus, .explore-item-3 a:focus, .explore-item-2 a:focus, .explore-item-4 a:focus, .news-content-wrapper {
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 1.5em; }
+  .box h2, .explore-item a h2, .explore-item-1 a h2, .explore-item-3 a h2, .explore-item-2 a h2, .explore-item-4 a h2, .explore-item a:active h2, .explore-item-1 a:active h2, .explore-item-3 a:active h2, .explore-item-2 a:active h2, .explore-item-4 a:active h2, .explore-item a:visited h2, .explore-item-1 a:visited h2, .explore-item-3 a:visited h2, .explore-item-2 a:visited h2, .explore-item-4 a:visited h2, .explore-item a:focus h2, .explore-item-1 a:focus h2, .explore-item-3 a:focus h2, .explore-item-2 a:focus h2, .explore-item-4 a:focus h2, .news-content-wrapper h2 {
+    font-size: 2em;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin-bottom: .2em; }
+  .box p, .explore-item a p, .explore-item-1 a p, .explore-item-3 a p, .explore-item-2 a p, .explore-item-4 a p, .explore-item a:active p, .explore-item-1 a:active p, .explore-item-3 a:active p, .explore-item-2 a:active p, .explore-item-4 a:active p, .explore-item a:visited p, .explore-item-1 a:visited p, .explore-item-3 a:visited p, .explore-item-2 a:visited p, .explore-item-4 a:visited p, .explore-item a:focus p, .explore-item-1 a:focus p, .explore-item-3 a:focus p, .explore-item-2 a:focus p, .explore-item-4 a:focus p, .news-content-wrapper p {
+    font-size: 0.9em; }
+
+.gradient, .explore-item a, .explore-item-1 a, .explore-item-3 a, .explore-item-2 a, .explore-item-4 a, .explore-item a:active, .explore-item-1 a:active, .explore-item-3 a:active, .explore-item-2 a:active, .explore-item-4 a:active, .explore-item a:visited, .explore-item-1 a:visited, .explore-item-3 a:visited, .explore-item-2 a:visited, .explore-item-4 a:visited, .explore-item a:focus, .explore-item-1 a:focus, .explore-item-3 a:focus, .explore-item-2 a:focus, .explore-item-4 a:focus, .news-content-wrapper {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.63)); }
+
 .container {
   max-width: 1111px;
   margin: auto; }
+
+.btn {
+  height: 34px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none; }
+  .btn-success {
+    background: #1EE668;
+    color: rgba(0, 0, 0, 0.61); }
 
 .grid {
   display: grid;
@@ -732,20 +765,78 @@ object {
   grid-auto-flow: row;
   justify-items: stretch;
   align-items: stretch;
-  margin-bottom: 20px; }
+  margin-bottom: 40px;
+  margin-top: 20px; }
+
+.bg-container {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .3s ease-out; }
+
+.main-title {
+  text-align: center;
+  font-size: 2.8em;
+  font-weight: normal;
+  color: black;
+  margin: 40px auto; }
 
 .explore-item, .explore-item-1, .explore-item-3, .explore-item-2, .explore-item-4 {
-  background-color: firebrick;
-  height: 280px; }
+  height: 280px;
+  color: white;
+  overflow: hidden;
+  position: relative; }
+  .explore-item:hover .bg-container, .explore-item-1:hover .bg-container, .explore-item-3:hover .bg-container, .explore-item-2:hover .bg-container, .explore-item-4:hover .bg-container {
+    transform: scale(1.06);
+    filter: blur(5px); }
+  .explore-item a, .explore-item-1 a, .explore-item-3 a, .explore-item-2 a, .explore-item-4 a, .explore-item a:active, .explore-item-1 a:active, .explore-item-3 a:active, .explore-item-2 a:active, .explore-item-4 a:active, .explore-item a:visited, .explore-item-1 a:visited, .explore-item-3 a:visited, .explore-item-2 a:visited, .explore-item-4 a:visited, .explore-item a:focus, .explore-item-1 a:focus, .explore-item-3 a:focus, .explore-item-2 a:focus, .explore-item-4 a:focus {
+    flex-direction: column;
+    justify-content: flex-end; }
   .explore-item-1, .explore-item-3 {
     grid-column: 1 / span 3; }
   .explore-item-2, .explore-item-4 {
     grid-column: 4 / span 3; }
 
 .news-item {
-  background-color: mediumseagreen;
+  color: white;
+  overflow: hidden;
+  position: relative;
   height: 280px;
   grid-column: 1 / span 6; }
+
+.news-content-wrapper {
+  position: relative; }
+
+.news-title {
+  max-width: 450px;
+  margin-top: auto; }
+
+.news-form {
+  width: 234px;
+  padding: 20px;
+  height: 100%;
+  margin-left: auto;
+  flex-direction: column;
+  justify-content: space-between; }
+  .news-form-group {
+    width: 100%; }
+    .news-form-group label, .news-form-group button, .news-form-group input {
+      display: block;
+      width: 100%; }
+    .news-form-group label {
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 5px; }
+    .news-form-group input {
+      padding: 0.26em 0.64em;
+      font-size: .9em;
+      height: 34px; }
 
 .social-item, .social-item-1, .social-item-2, .social-item-3 {
   background-color: dodgerblue;
@@ -758,12 +849,30 @@ object {
     grid-column: 5 / span 2; }
 
 .header {
-  background-color: indianred;
-  height: 75vh; }
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  color: white;
+  position: relative; }
+  .header a, .header a:active, .header a:visited, .header a:focus {
+    color: white; }
+  .header .bg-darken {
+    background-color: rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; }
   .header-container {
     max-width: 1111px;
     height: 100%;
     margin: auto; }
+    .header-container-container {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1; }
   .header-left, .header-right {
     display: flex;
     justify-content: center;
@@ -771,9 +880,11 @@ object {
     padding: 2rem; }
   .header-left {
     height: 100%;
-    float: left; }
+    float: left;
+    max-width: 50%; }
   .header-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    line-height: 3.6rem;
     margin-bottom: 1rem; }
   .header-more {
     margin-top: 0; }
