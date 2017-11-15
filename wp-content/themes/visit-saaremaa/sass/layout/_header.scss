@@ -1,8 +1,7 @@
 $booking-w: 270px;
-.header {
+.header, .header-article {
   background-position: center;
   background-size: cover;
-  height: 75vh;
   color: white;
   position: relative;
   a, a:active, a:visited, a:focus {
@@ -38,11 +37,19 @@ $booking-w: 270px;
     height: 100%;
     float: left;
     max-width: 50%;
+    &-article {
+      @extend .header-left;
+      justify-content: flex-end;
+      max-width: 75%;
+    }
   }
   &-title {
     font-size: 3.5rem;
     line-height: 3.6rem;
     margin-bottom: 1rem;
+    &-article {
+      @extend .header-title;
+    }
   }
   &-more {
     margin-top: 0;
@@ -65,4 +72,10 @@ $booking-w: 270px;
       flex: 1 1 auto;
     }
   }
+}
+.header {
+  height: 75vh;
+}
+.header-article {
+  height: 50vh;
 }

@@ -1,0 +1,19 @@
+.header-title-article {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.article {
+  &-container {
+    padding: 2rem;
+  }
+  &-lead {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+  }
+  &-body {
+    p {
+      padding-bottom: 1.6rem;
+      font-size: 1.2rem;
+    }
+  }
+}
